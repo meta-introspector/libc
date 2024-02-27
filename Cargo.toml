@@ -141,5 +141,5 @@ rustc-dep-of-std = ['align', 'rustc-std-workspace-core']
 extra_traits = []
 const-extern-fn = []
 
-[workspace]
-members = ["libc-test"]
+#[workspace]
+#members = ["libc-test"]
