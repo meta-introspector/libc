@@ -10,7 +10,7 @@ authors = ["The Rust Project Developers"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/rust-lang/libc"
-rust-version = "1.63"
+# rust-version = "1.63"
 
 [package.metadata.docs.rs]
 features = ["extra_traits"]
@@ -138,12 +138,12 @@ std = []
 rustc-dep-of-std = ["rustc-std-workspace-core"]
 extra_traits = []
 
-[workspace]
-members = [
-    "ctest",
-    "ctest-test",
-    "libc-test",
-]
+#[workspace]
+#members = [
+#    "ctest",
+#    "ctest-test",
+#    "libc-test",
+#]
 
 # FIXME(msrv): These should be renamed as `[workspace.lints.*]` once MSRV is above 1.64
 #       This way all crates can use it with `[lints] workspace=true` section
@@ -171,3 +171,4 @@ expl_impl_clone_on_copy = "allow"
 uninlined_format_args = "allow"
 unnecessary_cast = "allow"  # some casts like `as usize` are only needed for some targets
 used_underscore_binding = "allow"
+
